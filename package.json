@@ -1,0 +1,70 @@
+{
+  "name": "documentation-generator",
+  "displayName": "Documentation Generator",
+  "publisher": "smart-docs",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "main": "./extension.js",
+  "activationEvents": [
+    "onLanguage:markdown"
+  ],
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "docGenView",
+          "title": "📝 Doc Generator",
+          "icon": "$(book)"
+        }
+      ]
+    },
+    "views": {
+      "docGenView": [
+        {
+          "id": "documentationGenerator",
+          "name": "Documentation Generator",
+          "icon": "$(book)"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "documentationGenerator.generate",
+        "title": "Generate Documentation"
+      },
+      {
+        "command": "documentationGenerator.checkDifference",
+        "title": "Check Differences"
+      },
+      {
+        "command": "documentationGenerator.previewMarkdown",
+        "title": "Preview Markdown"
+      },
+      {
+        "command": "documentationGenerator.addDocType",
+        "title": "➕ Add Documentation Type"
+      },
+      {
+        "command": "documentationGenerator.addSection",
+        "title": "➕ Add Section"
+      },
+      {
+        "command": "documentationGenerator.openDocGenView",
+        "title": "📚 Open Doc Generator"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "documentationGenerator.openDocGenView",
+        "key": "ctrl+alt+d"
+      }
+    ]
+  },
+  "dependencies": {
+    "deep-diff": "^1.0.2",
+    "markdownlint": "^0.34.0",
+    "marked": "^16.2.1"
+  }
+}
