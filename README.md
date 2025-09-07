@@ -2,6 +2,19 @@
 
 A powerful VS Code extension that automatically generates comprehensive documentation for your codebase using AI. This extension analyzes your project structure, parses code files, and creates well-formatted Markdown documentation with customizable sections and types.
 
+## Track & Problem Statement
+
+**Track 3:** *Fix the Docs — Smarter, Faster, Maintainable Documentation for the Real World by iFAST (VS Code Extension)*
+
+**Problem statement:** In real-world tech environments, documentation is slow to create, often inconsistent, and quickly becomes stale as code evolves. This leads to onboarding delays, wasted engineering time, and avoidable bugs. This project tackles two core problems:
+
+1. **Simplify Writing** — Speed up and standardize documentation creation by auto-generating starter docs from code, commits, and comments; offering AI-powered templates, smart prompts, and real-time writing assistance.
+2. **Make Maintenance Easy** — Reduce doc-drift by detecting stale documentation, surfacing diffs/PRs that affect docs, and auto-suggesting updates so documentation stays accurate alongside the codebase.
+
+**Selected focus areas:**
+- **Simplify Writing** — Auto-generation, templates, AI suggestions, and markdown validation.
+- **Make Maintenance Easy** — Stale-doc detection, change notifications, and PR/diff-driven doc suggestions.
+
 ## Features
 
 - **AI-Powered Documentation**: Uses OpenAI's GPT-4o-mini to generate intelligent, context-aware documentation
